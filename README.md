@@ -34,6 +34,19 @@ python -m venv myenv
 myenv\Scripts\activate
 pip install -r requirements.txt
 ```
+### NOTE: 
+- If you have a gpu and it is not recognised then
+- Download this package :
+```bash
+pip install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu121
+```
+- And then test this code:
+```bash
+import torch
+print("CUDA available:", torch.cuda.is_available())
+print("Device:", torch.cuda.get_device_name(0) if torch.cuda.is_available() else "None")
+```
+
 
 ### Training
 
