@@ -1,3 +1,4 @@
+# Python
 __pycache__/
 *.py[cod]
 *$py.class
@@ -22,10 +23,12 @@ share/python-wheels/
 *.egg
 MANIFEST
 
+# PyTorch
 *.pt
 *.pth
 *.ckpt
 
+# Virtual Environment
 myenv/
 venv/
 env/
@@ -33,22 +36,31 @@ ENV/
 env.bak/
 venv.bak/
 
+# Model Checkpoints and Large Files
 checkpoints/
 models/
 *.safetensors
 *.bin
+*.model
 
+# Training Logs and Outputs
 logs/
 *.log
 *.out
 tensorboard_logs/
+runs/
+wandb/
 
+# IDE and Editor Files
 .vscode/
 .idea/
 *.swp
 *.swo
 *~
+.spyderproject
+.spyproject
 
+# OS Generated Files
 .DS_Store
 .DS_Store?
 ._*
@@ -57,15 +69,54 @@ tensorboard_logs/
 ehthumbs.db
 Thumbs.db
 *.tmp
+desktop.ini
 
+# Jupyter Notebook
 .ipynb_checkpoints
+*.ipynb
+
+# Environment Variables
 .env
 .env.local
 .env.*.local
 
+# Cache Files
 .cache/
 *.cache
+.pytest_cache/
+
+# Temporary and Build Files
 temp/
 tmp/
 *.temp
+*.bak
+*.backup
+
+# GPU and CUDA Cache
 .nv/
+.nvidia/
+
+# HuggingFace Cache
+.huggingface/
+transformers_cache/
+
+# Git
+.git/
+*.orig
+
+# Documentation Build
+docs/_build/
+site/
+
+# Test Coverage
+htmlcov/
+.coverage
+.coverage.*
+coverage.xml
+*.cover
+.hypothesis/
+
+# Package managers
+node_modules/
+.npm
+.yarn-integrity
